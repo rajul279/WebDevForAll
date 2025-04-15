@@ -1,0 +1,106 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: Black background with white text */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Header with a dark grey background */
+header {
+  background-color: #222;
+  padding: 20px;
+}
+ /* centering the header image rule */
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation: Darker background with centered links */
+nav {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  color: #ffa500;  /* Bright orange for the links */
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ff4500;  /* Hover changes to brighter orange */
+}
+
+/* Main content: Dark background with light border for separation */
+main {
+  background-color: #111;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+}
+
+/* Styling for div containers inside main to display images side by side */
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Headings: Centered Comic Sans with white color */
+h1 {
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #fff;
+  margin: 20px 0;
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+/* Images: Each image now uses auto margins inside the flex container */
+img {
+  /* Removing block display so the flex container controls the layout */
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  padding: 5px;
+}
+
+/* Anchor tags: Bright cyan with hover effects */
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff00ff;
+}
