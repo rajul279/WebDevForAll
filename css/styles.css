@@ -143,15 +143,6 @@ p {
   margin: 15px 0;
 }
 
-/* Images: Each image now uses auto margins inside the flex container */
-img {
-  /* Removing block display so the flex container controls the layout */
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #fff;
-  padding: 5px;
-}
-
 /* Anchor tags: Bright cyan with hover effects */
 a {
   color: #00ffff;
