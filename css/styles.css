@@ -33,20 +33,22 @@ body {
   object-fit: cover;
   border: 3px solid black;
   cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+  filter: blur(5px); /* Initial blur effect */
 }
 
 /* Hover Style */
-.preview:hover {
+.preview:hover,
+.preview:focus {
   transform: scale(1.05);
   border-color: #ffcc00;
+  filter: blur(0); /* Remove blur when hovered or focused */
 }
 
 /* Focus Style */
 .preview:focus {
   outline: 3px dashed #3333cc;
   outline-offset: 5px;
-  transform: scale(1.05);
   border-color: #33ccff;
 }
 
