@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body onload="initGallery()">
+  <main>
+    <h1>Accessible Photo Gallery</h1>
+
+    <div class="gallery-container">
+      <div id="gallery">
+        <figure>
+          <img class="preview" src="images/analytics.jpg" alt="Farm data analytics dashboard"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/crop-monitoring.jpg" alt="Crop monitoring using sensors"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/farm-drone.jpg" alt="Drone flying over a field"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/monitoring.jpg" alt="Monitoring crop health in field"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/organic-farming.jpg" alt="Organic farming produce"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/smart-irrigation.jpg" alt="Smart irrigation system in action"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+        <figure>
+          <img class="preview" src="images/soil-testing.jpg" alt="Soil testing equipment in use"
+               onmouseover="upDate(this)" onmouseout="unDo()" 
+               onfocus="upDate(this)" onblur="unDo()" />
+        </figure>
+      </div>
+
+      <div id="image" tabindex="0">
+        Hover over or focus on an image below to display it here.
+      </div>
+    </div>
+  </main>
+</body>
+</html>
