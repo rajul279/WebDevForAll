@@ -1,0 +1,64 @@
+/* Base Styles – Mobile First */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+/* Default mobile layout: single column */
+div {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+div img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* === Tablet View: ≥ 772px === */
+@media (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45vw;
+        vertical-align: top;
+        margin: 10px;
+    }
+
+    div img {
+        max-height: 30vh;
+        object-fit: cover;
+    }
+}
+
+/* === Large Screen View: ≥ 998px === */
+@media (min-width: 998px) {
+    div {
+        width: 30vw;
+    }
+}
