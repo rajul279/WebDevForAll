@@ -1,6 +1,7 @@
-/* Base Styles – Mobile First */
 body {
     background-color: #dedede;
+    margin: 0;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
 }
 
 h1 {
@@ -16,49 +17,54 @@ a {
 }
 
 p {
-    font-size: 25px;
-    font-family: Arial, sans-serif;
-    text-align: center;
+   font-size: 25px;
+   font-family: Arial, sans-serif;
 }
 
-main {
-    text-align: center;
+img {
+  width: 100%;  /* Make sure image fills the container width */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain;  /* Prevent stretching, and ensure the entire image is visible */
 }
 
-/* Default mobile layout: single column */
-div {
-    width: 90%;
-    margin: 10px auto;
-    padding: 5px;
-    box-sizing: border-box;
+p {
+  text-align: center;
 }
 
 div img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     display: block;
+    margin: auto;
+    object-fit: contain; /* Keeps aspect ratio intact without stretching */
+}
+
+div {
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+main {
+    width: 95%;
     margin: 0 auto;
-    object-fit: contain;
 }
 
-/* === Tablet View: ≥ 772px === */
-@media (min-width: 772px) {
-    div {
-        display: inline-block;
-        width: 45vw;
-        vertical-align: top;
-        margin: 10px;
-    }
+/* Media queries */
+@media (max-width: 772px) {
+  div {
+    width: 45%;
+  }
 
-    div img {
-        max-height: 30vh;
-        object-fit: cover;
-    }
+  div img {
+    max-height: 30vh;  /* Restrict image height to 30% of viewport height */
+  }
 }
 
-/* === Large Screen View: ≥ 998px === */
 @media (min-width: 998px) {
-    div {
-        width: 30vw;
-    }
+  div {
+    width: 30%;
+  }
 }
